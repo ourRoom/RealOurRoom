@@ -19,6 +19,7 @@ public class PageController {
 	
 	@RequestMapping("/home")
 	public String home() {
+		System.out.println("home");
 		return "/home/home";
 	}
 	
