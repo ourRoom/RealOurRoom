@@ -1,7 +1,9 @@
 package ourRoom.model;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 
+@Entity
 public class ChatMessage {
 	
 	@Column(name = "ch_num")

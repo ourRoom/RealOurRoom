@@ -26,7 +26,7 @@
 		<div class="leftIcon" onclick="location.href='myPage'"><span class="glyphicon glyphicon-user"></span></div>
 	</div>
 	
-	  : ${project_gantt}
+	 gantt : ${project_gantt}
 	
 </body>
 </html>
