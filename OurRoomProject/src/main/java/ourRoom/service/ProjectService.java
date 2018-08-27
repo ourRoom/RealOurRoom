@@ -6,16 +6,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import ourRoom.model.Project;
-import ourRoom.repositories.ProjectRepository;
+import ourRoom.repositories.ProjectDao;
 
 @Service
 public class ProjectService {
 
 	@Autowired
-	ProjectRepository pr;
+	ProjectDao projectDao;
 	
-	//해당 프로젝트로 페이지 이동?
-	public void projectView(int pNum) {
+	//해당 프로젝트로 페이지 이동(간트)
+	public Project projectView(int pNum) {
+		
+		return projectDao.findByPNum(pNum);
 	}
 	
 	//해당 로그로 이동

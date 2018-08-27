@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import ourRoom.model.Project;
-import ourRoom.repositories.ProjectRepository;
+import ourRoom.repositories.ProjectDao;
 import ourRoom.service.ProjectService;
 
 
@@ -16,7 +16,13 @@ import ourRoom.service.ProjectService;
 public class ProjectController {
 	
 	@Autowired
-	ProjectService ps;
+	ProjectService projectSvc;
+	
+	@GetMapping("")
+	public Project findBypNum(int pNum) {
+		
+		return projectSvc.projectView(pNum);
+	}
 	
 	//해당 로그로 이동
 	public void logLocationView() {
