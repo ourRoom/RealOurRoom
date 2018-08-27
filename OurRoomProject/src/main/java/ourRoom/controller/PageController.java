@@ -8,6 +8,7 @@ public class PageController {
 
 	@RequestMapping("/test1")
 	public String test1() {
+		System.out.println("test1!!!!!!!!!!!!");
 		return "test1";
 	}
 	
