@@ -11,11 +11,7 @@ public class OurRoomProjectApplicationTests {
 
 	@Test
 	public void contextLoads() {
-	}
-	
-	@Test
-	public void testtest() {
 		
 	}
-
+	
 }
